@@ -1,0 +1,35 @@
+.homeContainer{
+    display:flex;
+    align-items: center;
+}
+
+.homeContainerLeft{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:60px;
+}
+
+.homeContainerLeftImg img{
+    border-radius:50px;
+    width:800px;
+    height:600px;
+}
+
+.homeContainerRight{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+
+@media screen and (max-width:600px) {
+    .homeContainer{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .homeContainerLeftImg img{
+        border-radius:50px;
+        width:400px;
+        height:300px;
+    }
+}
