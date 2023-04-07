@@ -20,11 +20,11 @@ const responsive = {
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 3
+      items: 2
     },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2
+      items: 1
     }
   };
 
@@ -66,7 +66,7 @@ export default function CarouselViewer() {
     <div className="Cal-container">
       <div className="Cal-container-left">
         <Carousel responsive={responsive} infinite={true} centerMode={true} containerClass="carousel-container" autoPlay={play}
-              autoPlaySpeed={1000} >
+              autoPlaySpeed={2000} >
                 {Image.map((img) => {
                     const {id,image} = img;
                     return (
